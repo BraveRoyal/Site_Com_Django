@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 
 class Post(models.Model):
+    """criando a tabela e ao mesmo tempo definindo o que vai pegar na tabela"""
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -16,3 +17,4 @@ class Post(models.Model):
         return self.title
     def get_absolute_url(self):
         return reverse('blog:detail', kwargs={'slug': self.slug})
+"""blog/urls.py"""

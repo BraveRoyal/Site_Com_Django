@@ -1,5 +1,8 @@
 import os
 
+"""importar o os porque ira usar para a autenticação do site"""
+
+
 """
 Django settings for site_de_treinamento project.
 
@@ -31,7 +34,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+"""adicionar as paginas q ira usar (blog.apps.BlogConfig e accounts) e o crispy_forms que é o form do autenticador"""
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -129,6 +132,10 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+"""definir q assim q logar o usuario sera redirecionado para a pagina de blogs e assim que deslogar sera redirecionado para a pagina de Login"""
+
 LOGIN_REDIRECT_URL = '/blog'
 
 LOGOUT_REDIRECT_URL = '/accounts/login'
+
+"""/site_de_treinamento/urls.py"""
