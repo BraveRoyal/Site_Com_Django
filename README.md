@@ -8,3 +8,5 @@ Bibliotecas baixadas:
 django,
 ipython,
 django-crispy-forms
+
+Inicia com um python manage.py runserver
