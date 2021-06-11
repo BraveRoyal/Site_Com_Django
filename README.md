@@ -5,6 +5,6 @@ O site tem uma função simples de login com admin e navegar pelos blogs
 Recomendado ler por site_de_treinamento/settings.py do projeto
 
 Bibliotecas baixadas:
-django
-ipython
+django,
+ipython,
 django-crispy-forms
